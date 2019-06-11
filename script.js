@@ -21,14 +21,14 @@ function formatQueryParams(params) {
       <a href='${responseJson.data[i].directionsUrl}'>Click Here for more detailed directions</a>
       </li>
       `)
-    };
+     };
     $('#results').removeClass('hidden');
   }
 
   function getNationalParkInfo(query,limit=10) {
     const params = {
       api_key: apiKey,
-      q: query,
+      stateCode: query,
       limit: limit-1,
     };
     const queryString = formatQueryParams(params)
@@ -51,7 +51,7 @@ function formatQueryParams(params) {
 function watchForm() {
     $('form').submit(event => {
       event.preventDefault();
-      const searchTerm = $('#js-search-term').val();
+      const searchTerm = $('#js-search-term').val().trim();
       const limit = $('#js-max-results').val();
       getNationalParkInfo(searchTerm,limit);
     });
