@@ -1,0 +1,42 @@
+ 
+/* 
+color: #2F383F
+color: #1D2226
+color: #A8BBBF
+color: #A58775
+color: #A54A4A reddish*/
+
+/* WDstandardFormat */
+* {
+    font-family: 'Roboto', sans-serif;
+    color: #A8BBBF;
+    background: #1D2226;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+
+  .error-message {
+    color:#A54A4A;
+}
+
+.hidden {
+  display: none;
+}
+
+label, input {
+  margin: 10px;
+}
+
+input {
+  border-radius: 8px;
+  background: transparent;
+  
+}
+
+h3 {
+  font-size: 120%;
+  color:#A54A4A;
+}
+
